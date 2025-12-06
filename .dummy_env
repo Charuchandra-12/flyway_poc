@@ -1,0 +1,10 @@
+POSTGRES_USER: flywayuser
+POSTGRES_PASSWORD: flywaypass
+POSTGRES_DB: flyway_poc
+
+# For psql commands
+PGHOST=localhost
+PGPORT=5431
+PGDATABASE=flyway_poc
+PGUSER=flywayuser
+PGPASSWORD=flywaypass
