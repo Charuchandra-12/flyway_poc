@@ -62,6 +62,13 @@ test:
 	@$(PSQL) -c "SELECT * FROM app.get_user_by_id(1);"
 
 # -------------------------------
+# Call the stored procedure to reset users
+# -------------------------------
+reset-users:
+	@$(PSQL) -c "CALL app.reset_users();"
+	@echo "All users have been deleted by app.reset_users();"
+
+# -------------------------------
 # Open interactive psql shell
 # -------------------------------
 psql:
