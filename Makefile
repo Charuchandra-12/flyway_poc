@@ -67,6 +67,7 @@ test:
 reset-users:
 	@$(PSQL) -c "CALL app.reset_users();"
 	@echo "All users have been deleted by app.reset_users();"
+	@$(PSQL) -c "SELECT * FROM app.users;"
 
 # -------------------------------
 # Open interactive psql shell
