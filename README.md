@@ -19,26 +19,25 @@ It uses Docker to run a PostgreSQL container and a `Makefile` to simplify common
 
 ## Getting Started
 
-1.  **Create a `.env` file** with the following content:
+1.  **Create a `.env` file:** 
 
-    ```env
-    POSTGRES_USER=flywayuser
-    POSTGRES_PASSWORD=flywaypass
-    POSTGRES_DB=flyway_poc
-    PGHOST=localhost
-    PGPORT=5431
-    PGDATABASE=flyway_poc
-    PGUSER=flywayuser
-    PGPASSWORD=flywaypass
+    ```sh
+    mv .dummy_env .env
     ```
 
-2.  **Start the PostgreSQL container:**
+2.  **Create a `flyway.conf` file:**
+
+    ```sh
+    mv dummy_flyway.conf flyway.conf
+    ```
+
+3.  **Start the PostgreSQL container:**
 
     ```sh
     make up
     ```
 
-3.  **Run the database migrations:**
+4.  **Run the database migrations:**
 
     ```sh
     make migrate
