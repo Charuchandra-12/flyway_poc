@@ -1,4 +1,4 @@
-.PHONY: up down reset migrate history inspect test psql
+.PHONY: up down reset migrate history inspect test psql reset-users
 
 # Load .env file
 include .env
