@@ -1,4 +1,4 @@
--- V1: Create schema, sequence, and table (super simple)
+-- V1: Create schema, sequence, and table
 
 CREATE SCHEMA app;
 

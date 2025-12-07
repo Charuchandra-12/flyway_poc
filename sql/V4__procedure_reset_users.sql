@@ -1,4 +1,4 @@
--- V4: Simple stored procedure
+-- V4: Stored procedure
 
 CREATE PROCEDURE app.reset_users()
 LANGUAGE plpgsql
